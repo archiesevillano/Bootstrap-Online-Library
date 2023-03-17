@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Online Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <script defer src="https://kit.fontawesome.com/bbbef04b10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header class="container-fluid floating-header position-fixed fixed-top p-1">
+        <div
+            class="page-navigation container-lg navigations d-flex flex-row justify-content-between align-items-center">
+            <h1 class="brand-logo text-black border border-3 p-3 fs-3 m-0"
+                style="border-color:rgb(12, 12, 12)!important">
+                RS
+            </h1>
+            <ul class="content-navigation list-unstyled p-0 m-0 d-lg-block">
+                <li class="m-2">
+                    <input type="radio" id="exploreNavItem" name="content-nav">
+                    <label for="exploreNavItem" class="text-uppercase">Explore All</label>
+                    <div class="content-nav-highlights position-absolute bottom-1 start-0 w-100"></div>
+                </li>
+                <li class="m-2">
+                    <input type="radio" id="allTimeNavItem" name="content-nav">
+                    <label for="allTimeNavItem" class="text-uppercase">All Time Favorites</label>
+                    <div class="content-nav-highlights position-absolute bottom-1 start-0 w-100"></div>
+                </li>
+            </ul>
+
+            <button class="header-toggle border border-0 d-sm-none" style="background:none;outline:none;">
+                <i class="fa-solid fa-bars fs-1"></i>
+            </button>
+
+            <ul class="page-map m-0 p-0 d-sm-block">
+                <li>
+                    <a class="text-uppercase text-decoration-none p-2 me-1" href="#">Products</a>
+                </li>
+                <li>
+                    <a class="text-uppercase text-decoration-none p-2 me-1" href="#">Suggestions</a>
+                </li>
+                <li>
+                    <a class="text-uppercase text-decoration-none p-2 me-1" href="#">Contact us</a>
+                </li>
+            </ul>
+            <div class="user-section">
+                <button type="button" class="addToCartBtn border-0 position-relative">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="counter bg-info text-light">+99</span>
+                </button>
+                <button type="button" class="messageUs border-0 position-relative">
+                    <i class="fa-solid fa-comment"></i>
+                    <span class="counter bg-info text-light">+99</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid header-image d-lg-flex justify-content-evenly align-items-center">
+        <div class="container-lg row">
+            <div class="caption-container col-6 me-5">
+                <h1 class="caption text-light">Discover a World of Books: Your Online Destination
+                    for
+                    Reading
+                    Learning, and
+                    Imagination
+                </h1>
+            </div>
+            <div class="caption-container col-5 text-light">
+                <p>
+                    Explore our vast collection of books and immerse yourself in new worlds, ideas, and perspectives -
+                    all
+                    from the comfort of your own home.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid author-section mt-5 h-75 d-lg-block">
+        <div class="container-lg position-relative d-flex flex-row justify-content-center align-items-center">
+            <div class="author-image-background d-flex flex-column justify-content-center align-items-center">
+                <div
+                    class="author-item m-1 d-flex flex-row justify-content-start align-items-center p-2 col-8 position-relative">
+                    <div class="author-image-container">
+                        <img src="assets/images/authors/DonnaEverhart.jpg">
+                    </div>
+                    <div class="author-details p-2">
+                        <p class="author-name m-0 p-0">Donna Everhart</p>
+                        <p class="author-label p-0 m-0 text-secondary">Author</p>
+                    </div>
+                    <div class="author-icon position-absolute end-0 p-4">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+                <div
+                    class="author-item m-1 d-flex flex-row justify-content-start align-items-center p-2 col-8 position-relative">
+                    <div class="author-image-container">
+                        <img src="assets/images/authors/anaReyes.jpg">
+                    </div>
+                    <div class="author-details p-2">
+                        <p class="author-name m-0 p-0">Ana Reyes</p>
+                        <p class="author-label p-0 m-0 text-secondary">Author</p>
+                    </div>
+                    <div class="author-icon position-absolute end-0 p-4">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="author-quote-container p-5">
+                <h1 class="author-caption"><i class="fa-solid fa-quote-left"></i></h1>
+                <p class="p-2 fs-4">Sooner or later every writer evolves his own definition of a story.</p>
+            </div>
+        </div>
+    </div>
+    <section class="daily-section container-fluid d-lg-flex justify-content-center align-items-center mt-5">
+        <div class="container-lg d-flex flex-row justify-content-center align-items-center">
+            <div class="product-card d-flex flex-column justify-content-between align-items-center"
+                style="--posY: 50px;">
+                <div class="product-image-container w-100 position-relative">
+                    <img src="assets/images/books/56817071.jpg"
+                        class="overlay-image position-absolute top-0 bottom-0 h-100 w-100">
+                    <img src="assets/images/books/57940030.jpg" class="main-image h-100 w-100">
+                </div>
+                <div class="product-details w-100 d-flex justify-content-lg-between">
+                    <span class="product-price">$24.50</span>
+                    <span class="product-sold">1.5k+ sold</span>
+                </div>
+            </div>
+            <div class="product-card d-flex flex-column justify-content-between align-items-center"
+                style="--posY: 100px;">
+                <div class="product-image-container w-100 position-relative">
+                    <img src="assets/images/books/56817071.jpg"
+                        class="overlay-image position-absolute top-0 bottom-0 h-100 w-100">
+                    <img src="assets/images/books/57940030.jpg" class="main-image h-100 w-100">
+                </div>
+                <div class="product-details w-100 d-flex justify-content-lg-between">
+                    <span class="product-price">$24.50</span>
+                    <span class="product-sold">1.5k+ sold</span>
+                </div>
+            </div>
+            <div class="product-card d-flex flex-column justify-content-between align-items-center"
+                style="--posY: 50px;">
+                <div class=" product-image-container w-100 position-relative">
+                    <img src="assets/images/books/56817071.jpg"
+                        class="overlay-image position-absolute top-0 bottom-0 h-100 w-100">
+                    <img src="assets/images/books/57940030.jpg" class="main-image h-100 w-100">
+                </div>
+                <div class="product-details w-100 d-flex justify-content-lg-between">
+                    <span class="product-price">$24.50</span>
+                    <span class="product-sold">1.5k+ sold</span>
+                </div>
+            </div>
+            <div class="product-card d-flex flex-column justify-content-between align-items-center"
+                style="--posY: 140px;">
+                <div class="product-image-container w-100 position-relative">
+                    <img src="assets/images/books/56817071.jpg"
+                        class="overlay-image position-absolute top-0 bottom-0 h-100 w-100">
+                    <img src="assets/images/books/57940030.jpg" class="main-image h-100 w-100">
+                </div>
+                <div class="product-details w-100 d-flex justify-content-lg-between">
+                    <span class="product-price">$24.50</span>
+                    <span class="product-sold">1.5k+ sold</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shoplist container-fluid pt-3">
+        <div class="shoplist-header d-flex justify-content-between align-items-center pb-2">
+            <div class="categories">
+                <button type="button" class="toggle-category border-0 p-2" style="background: none;">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="d-sm-block categories-label">Categories</span>
+                </button>
+            </div>
+            <div class="shoplist-heading text-center">
+                <span class="shoplist-title d-sm-block m-0 p-0 fs-3 text-uppercase">ALL TIME FAVORITES</span>
+                <span class="shoplist-subhead text-uppercase d-sm-block">Grab yours now</span>
+            </div>
+            <ul class="shoplist-links p-0 m-0 list-unstyled me-2">
+                <li class="d-inline mx-2">
+                    <a href="#" class="text-decoration-none text-secondary">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="d-inline mx-2">
+                    <a href="#" class="text-decoration-none text-secondary">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="d-inline mx-2">
+                    <a href="#" class="text-decoration-none text-secondary">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <section class="container-fluid product-list" style="height:800px;padding-top:30px;">
+            <div class="row">
+                <div class="item1 p-item col-4 h-100 position-relative">
+                    <form
+                        class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                        action="checkout.html">
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                        </button>
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                        </button>
+                        <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                sell
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                        </button>
+                    </form>
+                    <img src="assets/images/books/great-circle.jpg">
+                </div>
+                <div class="item2 col-4 h-100 position-relative">
+                    <div class="item2 p-item item2-top h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                    <div class="item2 p-item item2-bot h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                </div>
+                <div class="item3 col-4 h-100">
+                    <div class="item3 p-item item3-top h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                    <div class="item3 p-item item3-bot h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item4 col-4 h-100">
+                    <div class="item4 p-item item4-top h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                    <div class="item4 p-item item4-bot h-50">
+                        <form
+                            class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                            action="checkout.html">
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    favorite
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                            </button>
+                            <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    shopping_cart
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                            </button>
+                            <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                                <span class="material-symbols-outlined">
+                                    sell
+                                </span>
+                                <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                            </button>
+                        </form>
+                        <img src="assets/images/books/great-circle.jpg">
+                    </div>
+                </div>
+                <div class="item5 p-item col-4 h-100">
+                    <form
+                        class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                        action="checkout.html">
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                        </button>
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                        </button>
+                        <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                sell
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                        </button>
+                    </form>
+                    <img src="assets/images/books/great-circle.jpg">
+                </div>
+                <div class="item6 p-item col-4 h-100">
+                    <form
+                        class="floating-user-buttons d-flex flex-column justify-content-center align-items-center position-absolute top-0 start-0 w-100"
+                        action="checkout.html">
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Wishlist</p>
+                        </button>
+                        <button type="button" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                shopping_cart
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Add to Cart</p>
+                        </button>
+                        <button type="submit" class="addToWishlist-btn user-act-btn border-0">
+                            <span class="material-symbols-outlined">
+                                sell
+                            </span>
+                            <p class="user-floating-button-text p-0 m-0 text-start">Buy Now</p>
+                        </button>
+                    </form>
+                    <img src="assets/images/books/great-circle.jpg">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer class="shoplist-footer mt-5 p-lg-5">
+        <div class="footer-header d-flex flex-row justify-content-between align-items-center p-3">
+            <p class="text-uppercase fs-4">Modern</p>
+            <ul class="list-unstyled">
+                <li class="d-inline">
+                    <a class="text-decoration-none p-3 text-secondary fs-4" href="#">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </a>
+                </li>
+                <li class="d-inline">
+                    <a class="text-decoration-none p-3 text-secondary fs-4" href="#">
+                        <i class="fa-brands fa-slack"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-content d-flex flex-row justify-content-between align-items-center mt-5">
+            <div class="getEmailContainer w-lg-50 d-flex justify-content-center align-items-center">
+                <div class="get-email-content-container">
+                    <h1>Be updated to our latest releases</h1>
+                    <p>Receive exclusive updates and more deals via email</p>
+                    <p>Join our community by entering your email below</p>
+                    <div class="getEmailBox position-relative">
+                        <input type="text" class="emailField rounded-1 border border-3 border-dark" id="emailField"
+                            placeholder=" " class="emailField">
+                        <label for="emailField" class="position-absolute getEmailLabel bg-body">your@email.com</label>
+                        <button type="button" class="notifyMeButton bg-dark text-light border-0 rounded-1">Notify
+                            me</button>
+                    </div>
+                </div>
+            </div>
+            <div class="aesthetic-images-container d-lg-flex flex-row">
+                <div class="col-4 d-flex flex-column justify-content-start">
+                    <div class="ae-image-container w-100" style="height:380px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (6).jpg">
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-start">
+                    <div class="ae-image-container w-100" style="height:180px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (2).jpg">
+                    </div>
+                    <div class="ae-image-container w-100" style="height:330px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (3).jpg">
+                    </div>
+                    <div class="ae-image-container w-100" style="height:100px; filter:grayscale(100%)">
+                        <img src="assets/images/w1.jpg">
+                    </div>
+                    <div class="ae-image-container w-100" style="height:130px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (8).jpg">
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-start">
+                    <div class="ae-image-container w-100" style="height:380px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (7).jpg">
+                    </div>
+                    <div class="ae-image-container w-100" style="height:200px;">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (1).jpg">
+                    </div>
+                    <div class="ae-image-container w-100">
+                        <img src="assets/images/wallpaperflare.com_wallpaper (12).jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shoplist-footer d-flex flex-row">
+            <div class="store-location-container px-5 pt-5">
+                <div class="icon-container pb-5">
+                    <i class="fa-solid fa-store fs-1"></i>
+                </div>
+                <h1>Store Location</h1>
+                <p>
+                    Alabang Zapote Rd. Real St Almanza Uno <br>Las Piñas City 1750 Metro Manila Philippines
+                </p>
+                <p>
+                    Copyright &copy; 2023 RiverSide<br>Developed by Archie Sevillano
+                </p>
+            </div>
+            <div class="contact-container px-5 pt-5">
+                <div class="icon-container pb-5">
+                    <i class="fa-solid fa-comments fs-1"></i>
+                </div>
+                <h1>Contact us</h1>
+                <ul class="list-unstyled">
+                    <li>Email: Riverside08@gmail.com</li>
+                    <li>Phone: (+63) 9547 122 7867</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
