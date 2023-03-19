@@ -172,10 +172,7 @@ body {
         100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-.main-image,
-.overlay-image {
-    object-fit: contain;
-    background: #333;
+.main-image {
     box-shadow:
         2.8px 2.8px 7.1px rgba(0, 0, 0, 0.017),
         6.7px 6.7px 17.2px rgba(0, 0, 0, 0.044),
@@ -183,6 +180,12 @@ body {
         22.3px 22.3px 57.6px rgba(0, 0, 0, 0.089),
         41.8px 41.8px 107.8px rgba(0, 0, 0, 0.08),
         100px 100px 258px rgba(0, 0, 0, 0.07);
+}
+
+.overlay-image,
+.main-image {
+    object-fit: contain;
+    background: none;
     transform: scale(0.6);
     transition: all 0.4s ease-in-out;
     cursor: pointer;
