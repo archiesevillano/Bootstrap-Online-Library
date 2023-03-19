@@ -484,7 +484,7 @@ body {
 }
 
 .checkout-form {
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 .p-info,
