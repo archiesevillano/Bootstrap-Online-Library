@@ -255,6 +255,8 @@ body {
 .shoplist {
     border-top: 1px solid #13121254;
     margin-top: 70px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .shoplist-subhead {
@@ -342,6 +344,10 @@ body {
     color: var(--clean);
 }
 
+.user-act-btn .user-floating-button-text {
+    display: none;
+}
+
 .user-act-btn:hover {
     color: var(--highlight);
 }
@@ -351,7 +357,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.3s ease-in-out;
     overflow: hidden;
-    height: 0;
+    height: 0%;
     opacity: 0;
     filter: blur(10px);
     padding: 10px;
@@ -389,12 +395,13 @@ body {
 }
 
 .getEmailLabel {
-    top: 7px;
+    top: 11px;
     left: 6px;
     padding: 3px 8px;
     transition: all 0.3s ease-in-out;
     cursor: text;
     font-family: 'Poppins', sans-serif;
+    opacity: 0.8;
 }
 
 .emailField:not(:placeholder-shown)~label,
@@ -403,6 +410,7 @@ body {
     left: 9px;
     padding: 3px 8px;
     font-size: 12px;
+    opacity: 1;
 }
 
 .aesthetic-images-container {
@@ -459,6 +467,13 @@ body {
     }
 }
 
+@media (max-width: 750px) {
+    .product-list {
+        height: 600px !important;
+    }
+
+}
+
 .checkout-form {
     align-items: center;
 }
@@ -475,4 +490,8 @@ body {
 .p-info,
 .order-summary {
     width: 90%;
+}
+
+.shoplist-footer {
+    flex-direction: column;
 }
